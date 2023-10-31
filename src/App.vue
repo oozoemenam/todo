@@ -1,20 +1,21 @@
 <script setup>
-import Todos from "@components/ToDos.vue";
+import AppHeader from "./components/AppHeader.vue";
+import TodoProject from "./components/TodoProject.vue";
 </script>
 
 <template>
-  <div class="app w3-blue-gray">
-    <todos></todos>
+  <div class="app">
+    <app-header></app-header>
+    <main class="w3-container">
+      <todo-project></todo-project>
+    </main>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
 .app {
-  display: flex;
-  justify-content: center;
   width: 100vw;
   min-height: 100vh;
-  padding: 5rem;
+  padding: 0;
 }
 </style>
